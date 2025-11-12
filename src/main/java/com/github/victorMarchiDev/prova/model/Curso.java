@@ -13,6 +13,8 @@ public class Curso {
 
     private String nome;
     private Integer cargaHoraria;
+
+    @OneToMany
     private List<Aluno> alunos;
 
     public Curso() {

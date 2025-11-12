@@ -15,6 +15,7 @@ public class Aluno {
     private StatusEnum status;
 
     @ManyToOne
+    @JoinColumn(name = "curso_id")
     private Curso curso;
 
     public Curso getCurso() {
